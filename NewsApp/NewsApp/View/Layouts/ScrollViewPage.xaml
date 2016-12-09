@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewsApp.View.Layouts.ScrollViewPage">
+  <ScrollView>
+    <StackLayout>
+      <Image Source="http://www.vcostantini.eu/uploads/images/seconda/torre.jpg"  HeightRequest="600" WidthRequest="150" />
+      <StackLayout Padding="15">
+        <Label FontSize="20"  Text="La cosiddetta torre pendente di Pisa è il campanile della cattedrale di Santa Maria Assunta, nella celeberrima piazza del Duomo di cui è il monumento più famoso per via della caratteristica pendenza, simbolo della città e uno dei simboli d'Italia." />
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

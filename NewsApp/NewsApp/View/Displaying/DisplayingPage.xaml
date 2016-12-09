@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:services="clr-namespace:NewsApp.Services;assembly=NewsApp"
+             x:Class="NewsApp.View.Displaying.DisplayingPage">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+    </Grid.RowDefinitions>
+
+    <StackLayout Grid.Row="0" Padding="10">
+      <Label Text="{services:Translate Text=AppTitle}" TextColor="#F6921E" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+
+    </StackLayout>
+
+    <StackLayout Grid.Row="1" Padding="10">
+      <Image Source="https://www.xamstatic.com/dist/images/pages/forms/crm-app@2x-gS9Gn7Ma.png" HeightRequest="50"></Image>
+    </StackLayout>
+
+
+    <StackLayout Grid.Row="2" Padding="10">
+      <BoxView Color="Red" ></BoxView>
+    </StackLayout>
+
+
+    
+    <StackLayout Grid.Row="3" Padding="10">
+      <ListView
+                     HeightRequest="500"
+                     VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"
+                     x:Name="ListaServizi"
+                     HasUnevenRows="True"
+                     BackgroundColor="#F3F3F3"
+                     SeparatorVisibility="None"
+                     ItemsSource="{Binding ListNews}">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Padding="10">
+                <StackLayout>
+                  <Label Text="{Binding title}" FontSize="20" TextColor="Purple"></Label>
+                </StackLayout>
+                <StackLayout>
+                  <Label Text="{Binding body}"></Label>
+                </StackLayout>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+
+   
+
+    
+
+
+
+  </Grid>
+</ContentPage>

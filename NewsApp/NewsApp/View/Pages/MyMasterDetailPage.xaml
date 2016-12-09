@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:NewsApp.View.Pages;assembly=NewsApp"
+             x:Class="NewsApp.View.Pages.MyMasterDetailPage">
+  
+  <!--<MasterDetailPage.Detail>
+    <pages:MasterDetailPageDetail Title="Pagina Detail" />
+  </MasterDetailPage.Detail>
+  <MasterDetailPage.Master>
+    <pages:MasterDetailPageMaster Title="Pagina Master" />
+  </MasterDetailPage.Master>-->
+  
+</MasterDetailPage>

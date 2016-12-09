@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewsApp.View.Login.LoginPage">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+    </Grid.RowDefinitions>
+    <Label Grid.Row="0" Text="User"></Label>
+    <Entry Grid.Row="1" Text="{Binding UserName}"></Entry>
+    <Label Grid.Row="2" Text="Password"></Label>
+    <Entry Grid.Row="3" Text="{Binding Password}" IsPassword="True"></Entry>
+    <Button Grid.Row="4" Text="Login" Command="{Binding LoginCommand}" IsEnabled="True"  ></Button>
+    <Button Grid.Row="5" Text="Register" Command="{Binding RegisterCommand}"  IsEnabled="True"></Button>
+  </Grid>
+</ContentPage>

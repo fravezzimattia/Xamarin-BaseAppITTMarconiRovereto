@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NewsApp"
+             xmlns:services="clr-namespace:NewsApp.Services;assembly=NewsApp"
+             x:Class="NewsApp.View.Pages.PagesPage">
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+    </Grid.RowDefinitions>
+
+    <StackLayout Grid.Row="0" Padding="10">
+      <StackLayout.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding CommandToTabbed}"></TapGestureRecognizer>
+      </StackLayout.GestureRecognizers>
+      <Label Text="TabbedPage" TextColor="#F6921E" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+    </StackLayout>
+
+    <StackLayout Grid.Row="1" Padding="10">
+      <StackLayout.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding CommandToCarousel}"></TapGestureRecognizer>
+      </StackLayout.GestureRecognizers>
+      <Label Text="CarouselPage" TextColor="#F6921E" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+    </StackLayout>
+
+    <StackLayout Grid.Row="2" Padding="10">
+      <StackLayout.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding CommandToMasterDetail}"></TapGestureRecognizer>
+      </StackLayout.GestureRecognizers>
+      <Label Text="MasterDetailPage" TextColor="#F6921E" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+    </StackLayout>
+
+    <StackLayout Grid.Row="3" Padding="10">
+      <Label Text="NavigationPage" TextColor="#666" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+    </StackLayout>
+
+  </Grid>
+</ContentPage>
